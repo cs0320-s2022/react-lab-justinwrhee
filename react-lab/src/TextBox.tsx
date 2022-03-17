@@ -5,6 +5,7 @@ function TextBox(props : {label : string, change : React.Dispatch<React.SetState
   return (
     <div className={"TextBox"}>
       <header>
+        {props.label}:
         <input type={"text"} onChange={e => props.change(e.target.value)}></input>
       </header>
     </div>
