@@ -45,11 +45,7 @@ function Horoscope() {
       <TextBox label={"Rising Sign"} change={setRising}/>
       <AwesomeButton onPress={requestHoroscope} type="primary">Submit</AwesomeButton>
       <br></br>
-      {horoscope[0]}<br></br>
-      {horoscope[1]}<br></br>
-      {horoscope[2]}<br></br>
-      {horoscope[3]}<br></br>
-      {horoscope[4]}<br></br>
+      {horoscope.map(e => <p>{e}</p>)}
     </div>
   );
 }
